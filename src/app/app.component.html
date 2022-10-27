@@ -1,26 +1,43 @@
 <div class="container">
-    <button mat-button color="warn">Click here!</button><br>
-    <a href="#" mat-raised-button color="primary">Click</a><br>
-    <button mat-flat-button color="primary">Click</button><br>
+    <mat-chip-list>
+        <mat-chip disabled color="accent" selected>1st chip</mat-chip>
+        <mat-chip>2nd chip</mat-chip>
+        <mat-chip color="primary" selected>3rd chip</mat-chip>
+        <mat-chip disabled>4th chip</mat-chip>
+        <mat-basic-chip>5th chip</mat-basic-chip>
+    </mat-chip-list>
 
-    <mat-button-toggle-group vertical name="toggle_data" multiple disable>
-        <mat-button-toggle value="1st_button">Click here</mat-button-toggle>
-        <mat-button-toggle value="2nd_button">Click here please</mat-button-toggle>
-        <mat-button-toggle value="3rd_button">Here please</mat-button-toggle>
-    </mat-button-toggle-group>
+    <mat-icon>home</mat-icon><br><br>
+    <mat-icon color="warn">face</mat-icon>
+    <mat-spinner></mat-spinner><br><br>
+    <mat-progress-spinner value="50"></mat-progress-spinner><br><br>
+    <mat-progress-spinner value="20"></mat-progress-spinner><br><br>
+    <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
 
-    <div>
-        <span matBadge="4" matBadgeOverlap="false"> Some text </span> <br><br>
-        <button mat-raised-button matBadge="4">The button</button><br> <br>
-        <button mat-raised-button matBadge="3" color="accent" matBadgeColor="primary" matBadgePosition="before">The
-            second button</button> <br> <br>
-        <span matBadge="17" matBadgePosition="below" matBadgeOverlap="false"> Notification</span> <br> <br>
-        <span matBadge="17" matBadgePosition="above before" matBadgeOverlap="false"> Notification</span> <br><br>
-        <span matBadge="17" matBadgePosition="below before" matBadgeOverlap="false"> Notification</span> <br><br>
-        <span matBadge="17" matBadgeSize="large" matBadgeOverlap="false"> Notification</span><br><br>
-        <span matBadge="17" matBadgeSize="small" matBadgeOverlap="false"> Notification</span><br><br>
+    <mat-progress-bar mode="determinate" value="40" color="warn"></mat-progress-bar><br><br>
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    <mat-progress-bar mode="buffer"></mat-progress-bar> <br> <br>
+    <mat-progress-bar mode="query" color="warn"></mat-progress-bar>
 
-
+    <div class="card-class">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title-group>
+                    <mat-card-title> The main title</mat-card-title>
+                    <mat-card-subtitle>The sub title</mat-card-subtitle>
+                </mat-card-title-group>
+            </mat-card-header>
+            <mat-card-content>
+                <p>Some dummy text for the card</p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-raised-button>Share</button>
+                <button mat-raised-button>Close</button>
+            </mat-card-actions>
+            <mat-card-footer>
+                The card footer
+            </mat-card-footer>
+        </mat-card>
     </div>
 
 </div>
