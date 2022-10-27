@@ -15,6 +15,7 @@ import { MatDividerModule} from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatListModule } from '@angular/material/list'
 import { MatStepperModule } from '@angular/material/stepper';
+import { MatTabsModule } from '@angular/material/tabs'
 @NgModule({
   declarations: [
     AppComponent
@@ -33,7 +34,8 @@ import { MatStepperModule } from '@angular/material/stepper';
     MatDividerModule,
     MatExpansionModule,
     MatListModule,
-    MatStepperModule
+    MatStepperModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

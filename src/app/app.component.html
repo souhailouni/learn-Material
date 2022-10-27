@@ -1,17 +1,14 @@
 <div class="container">
-    <mat-vertical-stepper>
-        <mat-step label="Step 1">
-            <p>The step 1</p>
-            <button mat-button matStepperNext>Next</button>
-        </mat-step>
-        <mat-step label="Step 2">
-            <p>The step 2</p>
-            <button mat-button matStepperPrevious>Previous</button>
-            <button mat-button matStepperNext>Next</button>
-        </mat-step>
-        <mat-step label="Step 3">
-            <p>The step 3</p>
-            <button mat-button matStepperPrevious>Previous</button>
-        </mat-step>
-    </mat-vertical-stepper>
+
+    <mat-tab-group  mat-align-tabs="end" animationDuration="1000ms">
+        <mat-tab label="Tab 1">
+            <p>Some dummy data</p>
+        </mat-tab>
+        <mat-tab label="Tab 2">
+            <p>Some dummy data for tab 2</p>
+        </mat-tab>
+        <mat-tab label="Tab 3">
+            <p>Some dummy data for tab 3</p>
+        </mat-tab>
+    </mat-tab-group>
 </div>
