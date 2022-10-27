@@ -13,6 +13,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule} from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatListModule } from '@angular/material/list'
 @NgModule({
   declarations: [
     AppComponent
@@ -29,7 +30,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatProgressBarModule,
     MatCardModule,
     MatDividerModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

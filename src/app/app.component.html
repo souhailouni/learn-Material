@@ -1,28 +1,27 @@
 <div class="container">
 
-    <p> Some text</p>
-    <mat-divider></mat-divider>
-    <p> Some other text</p>
-    <mat-divider></mat-divider>
+    <mat-list>
+        <mat-list-item>Milk</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>Tea</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>Water</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>Sugar</mat-list-item>
+    </mat-list>
+    <mat-nav-list>
+        <a mat-list-item href="#">Item 1</a>
+        <a mat-list-item href="#">Item 2</a>
+
+    </mat-nav-list>
+
+    <mat-action-list>
+        <button mat-button>Click me</button>
+        <button mat-button>Click me please</button>
+    </mat-action-list>
+    
+    <mat-selection-list>
+        <mat-list-option>Option 1</mat-list-option>
+        <mat-list-option>Option 2</mat-list-option>
+    </mat-selection-list>
 </div>
-<mat-accordion>
-    <mat-expansion-panel>
-        <mat-expansion-panel-header>
-            <mat-panel-title>The Panel Title</mat-panel-title>
-            <mat-panel-description>
-                This is the Panel Description
-            </mat-panel-description>
-        </mat-expansion-panel-header>
-        <p>This is some main data which we will see upon expansion.</p>
-        <mat-action-row>
-            <button mat-button>Click here</button>
-        </mat-action-row>
-    </mat-expansion-panel>
-    <mat-expansion-panel>
-        <mat-expansion-panel-header>
-            <mat-panel-title>The second title</mat-panel-title>
-            <mat-panel-description>The second Description</mat-panel-description>
-        </mat-expansion-panel-header>
-        <p> Some basic text.</p>
-    </mat-expansion-panel>
-</mat-accordion>
