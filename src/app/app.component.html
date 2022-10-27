@@ -1,13 +1,26 @@
-<h1>Plain Heading</h1>
-<h1 class="mat-display-1">The main Heading</h1>
-<h1 class="mat-display-2">The second main Heading</h1>
-<h1 class="mat-display-3">The third main Heading</h1>
-<h1 class="mat-display-4">The fourth main Heading</h1>
+<div class="container">
+    <button mat-button color="warn">Click here!</button><br>
+    <a href="#" mat-raised-button color="primary">Click</a><br>
+    <button mat-flat-button color="primary">Click</button><br>
 
-<h1 class="mat-h2 mat-headline">Headline</h1>
-<h1 class="mat-h2 mat-title">Title</h1>
-<h1 class="mat-h3 mat-subheading-1">Sub Heading</h1>
-<h1 class="mat-h3 mat-subheading-2">Sub Heading 2</h1>
+    <mat-button-toggle-group vertical name="toggle_data" multiple disable>
+        <mat-button-toggle value="1st_button">Click here</mat-button-toggle>
+        <mat-button-toggle value="2nd_button">Click here please</mat-button-toggle>
+        <mat-button-toggle value="3rd_button">Here please</mat-button-toggle>
+    </mat-button-toggle-group>
 
-<h1 class="mat-body mat-body-1">Body</h1>
-<h1 class="mat-body-strong mat-body-2">Body 2</h1>
+    <div>
+        <span matBadge="4" matBadgeOverlap="false"> Some text </span> <br><br>
+        <button mat-raised-button matBadge="4">The button</button><br> <br>
+        <button mat-raised-button matBadge="3" color="accent" matBadgeColor="primary" matBadgePosition="before">The
+            second button</button> <br> <br>
+        <span matBadge="17" matBadgePosition="below" matBadgeOverlap="false"> Notification</span> <br> <br>
+        <span matBadge="17" matBadgePosition="above before" matBadgeOverlap="false"> Notification</span> <br><br>
+        <span matBadge="17" matBadgePosition="below before" matBadgeOverlap="false"> Notification</span> <br><br>
+        <span matBadge="17" matBadgeSize="large" matBadgeOverlap="false"> Notification</span><br><br>
+        <span matBadge="17" matBadgeSize="small" matBadgeOverlap="false"> Notification</span><br><br>
+
+
+    </div>
+
+</div>
