@@ -18,7 +18,8 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatMenu, MatMenuModule } from '@angular/material/menu'
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSidenavModule} from '@angular/material/sidenav';
 @NgModule({
   declarations: [
     AppComponent
@@ -41,7 +42,8 @@ import { MatMenu, MatMenuModule } from '@angular/material/menu'
     MatTabsModule,
     MatGridListModule,
     MatToolbarModule,
-    MatMenuModule
+    MatMenuModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
