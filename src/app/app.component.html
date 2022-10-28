@@ -1,14 +1,16 @@
 <div class="container">
-    <mat-toolbar color="warn">The title</mat-toolbar>
-    <br><br>
-    <mat-toolbar color="accent">
-        <mat-toolbar-row>
-            The first title row
-        </mat-toolbar-row>
-        <br>
-        <mat-toolbar-row>
-            The second title row
-        </mat-toolbar-row>
-    </mat-toolbar>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <button mat-button [matMenuTriggerFor]="menu">Open Menu</button>
+    <mat-menu #menu="matMenu" yPosition="below" xPostion="before">
+        <button mat-menu-item>First Item menu</button>
+        <button mat-menu-item>Second Item</button>
+        <button mat-menu-item>Third Item</button>
+        <button mat-menu-item [matMenuTriggerFor]="subMenu">Forth Item</button>
+    </mat-menu>
+
+    <mat-menu #subMenu="matMenu">
+        <button mat-menu-item>Forth 1</button>
+        <button mat-menu-item>Forth 2</button>
+    </mat-menu>
     
 </div>
