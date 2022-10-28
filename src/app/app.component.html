@@ -1,5 +1,5 @@
 <div class="container">
-    <mat-sidenav-container>
+    <!--- <mat-sidenav-container>
         <mat-sidenav mode="over" #sidenav closed> The Sidenav</mat-sidenav>
         <mat-sidenav mode="push" #sidenavend closed position="end">The right sidenav</mat-sidenav>
         <div>
@@ -7,6 +7,13 @@
             <button mat-button (click)="sidenav.toggle()">Toggle the Sidenav</button>
             <button mat-button (click)="sidenavend.toggle()">Toggle the right sidenav</button>
         </div>
-    </mat-sidenav-container>
+    </mat-sidenav-container>-->
+
+    <mat-drawer-container>
+        <mat-drawer mode="push" closed #sidedrawer>The side drawer</mat-drawer>
+        <mat-drawer-content>The mat drawer content
+            <button mat-button (click)="sidedrawer.toggle()">Toggle Side Drawer</button>
+        </mat-drawer-content>
+    </mat-drawer-container>
     
 </div>

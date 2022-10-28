@@ -3,9 +3,6 @@
     padding: 20px
 }
 
-mat-grid-tile {
-    background-color: lightgreen;
-}
 
 mat-sidenav-container {
     position: absolute;
@@ -13,4 +10,10 @@ mat-sidenav-container {
     right: 0;
     left: 0;
     bottom: 0;
+}
+
+mat-drawer-container {
+    width: 500px;
+    height: 400px;
+    border: 1px solid gray;
 }
